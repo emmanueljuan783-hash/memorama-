@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memorama PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" href="cerebro.png" type="image/png">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🧠 Memorama PWA</h1>
+        
+        <div class="stats">
+            <p>Intentos: <span id="intentos">0</span></p>
+            <p>Tiempo: <span id="tiempo">0</span>s</p>
+        </div>
+
+        <!-- Botón para instalar la PWA en el celular o PC -->
+        <button id="btnInstalar" style="display: none;" class="install-btn">📲 Descargar / Instalar App</button>
+
+        <div class="grid" id="grid"></div>
+
+        <button id="reiniciar" class="restart-btn">Reiniciar Juego</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
